@@ -153,17 +153,18 @@ public class ImageResizer {
      * Convert metadata to degrees
      */
     public static int getOrientation(ExifInterface exif) {
-        int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
-        switch (orientation) {
-            case ExifInterface.ORIENTATION_ROTATE_90:
-                return 90;
-            case ExifInterface.ORIENTATION_ROTATE_180:
-                return 180;
-            case ExifInterface.ORIENTATION_ROTATE_270:
-                return 270;
-            default:
-                return 0;
-        }
+        return 0;
+        // int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
+        // switch (orientation) {
+        //     case ExifInterface.ORIENTATION_ROTATE_90:
+        //         return 90;
+        //     case ExifInterface.ORIENTATION_ROTATE_180:
+        //         return 180;
+        //     case ExifInterface.ORIENTATION_ROTATE_270:
+        //         return 270;
+        //     default:
+        //         return 0;
+        // }
     }
 
     /**
